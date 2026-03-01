@@ -22,7 +22,7 @@
 
   ## How to use it
 
-  1. Download `orwiki_publish.archimate`
+  1. Download [`orwiki_publish.archimate`](https://github.com/BoraPerzic/ORWiki/raw/main/orwiki_publish.archimate)
   2. Open in Archi (File → Open)
   3. Explore the model — views organized by capability
 
