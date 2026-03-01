@@ -1,0 +1,122 @@
+
+/* archi-query-patch.css  (v2)
+   Styles for the upgraded SQL query panel */
+
+.aqp-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px 0;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.aqp-textarea {
+  width: 100%;
+  min-height: 110px;
+  resize: vertical;
+  font-family: 'Consolas', 'Fira Mono', 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 8px 10px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  background: #fafafa;
+  color: #222;
+  box-sizing: border-box;
+  outline-offset: 2px;
+  tab-size: 2;
+  white-space: pre;
+  overflow-wrap: normal;
+  overflow-x: auto;
+}
+.aqp-textarea:focus {
+  border-color: #3a78c9;
+  background: #fff;
+  box-shadow: 0 0 0 2px rgba(58,120,201,.2);
+}
+
+.aqp-toolbar {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.aqp-btn {
+  padding: 5px 13px;
+  font-size: 12.5px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  background: #f0f0f0;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background .15s, box-shadow .15s;
+}
+.aqp-btn:hover  { background: #e2e2e2; box-shadow: 0 1px 3px rgba(0,0,0,.15); }
+.aqp-btn:active { background: #d5d5d5; }
+
+.aqp-btn-run  { background: #2e6da4; color: #fff; border-color: #1d527f; font-weight: 600; }
+.aqp-btn-run:hover  { background: #245a8e; }
+.aqp-btn-run:active { background: #1d527f; }
+
+.aqp-btn-save  { background: #3a7d44; color: #fff; border-color: #2d6236; }
+.aqp-btn-save:hover  { background: #2d6236; }
+
+.aqp-btn-clear { color: #888; }
+.aqp-btn-clear:hover { color: #c00; }
+
+.aqp-btn-clear-results { color: #888; border-color: #d0a0a0; }
+.aqp-btn-clear-results:hover { color: #fff; background: #c0392b; border-color: #922b21; }
+
+.aqp-lib {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+  padding: 8px 10px;
+  max-height: 220px;
+  overflow-y: auto;
+  font-size: 12.5px;
+}
+.aqp-lib-heading {
+  margin: 6px 0 4px;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: #888;
+  font-weight: 600;
+}
+.aqp-lib-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 2px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.aqp-lib-item:last-child { border-bottom: none; }
+.aqp-lib-label {
+  flex: 1;
+  font-family: 'Consolas', monospace;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #2e6da4;
+}
+.aqp-lib-label:hover { text-decoration: underline; }
+.aqp-lib-del {
+  background: none;
+  border: none;
+  color: #bbb;
+  cursor: pointer;
+  padding: 0 3px;
+  font-size: 12px;
+  line-height: 1;
+}
+.aqp-lib-del:hover { color: #c00; }
+.aqp-lib-empty {
+  color: #aaa;
+  font-style: italic;
+  margin: 4px 0;
+}
